@@ -1,0 +1,16 @@
+C:\Users\User\source\repos\Projet_Gestion_Ecole\Projet_Gestion_Ecole\bin\Debug\Projet_Gestion_Ecole.exe.config
+C:\Users\User\source\repos\Projet_Gestion_Ecole\Projet_Gestion_Ecole\bin\Debug\Projet_Gestion_Ecole.exe
+C:\Users\User\source\repos\Projet_Gestion_Ecole\Projet_Gestion_Ecole\bin\Debug\Projet_Gestion_Ecole.pdb
+C:\Users\User\source\repos\Projet_Gestion_Ecole\Projet_Gestion_Ecole\bin\Debug\EntityFramework.dll
+C:\Users\User\source\repos\Projet_Gestion_Ecole\Projet_Gestion_Ecole\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\source\repos\Projet_Gestion_Ecole\Projet_Gestion_Ecole\bin\Debug\EntityFramework.xml
+C:\Users\User\source\repos\Projet_Gestion_Ecole\Projet_Gestion_Ecole\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\source\repos\Projet_Gestion_Ecole\Projet_Gestion_Ecole\obj\Debug\Projet_Gestion_Ecole.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\Projet_Gestion_Ecole\Projet_Gestion_Ecole\obj\Debug\Projet_Gestion_Ecole.Form1.resources
+C:\Users\User\source\repos\Projet_Gestion_Ecole\Projet_Gestion_Ecole\obj\Debug\Projet_Gestion_Ecole.Properties.Resources.resources
+C:\Users\User\source\repos\Projet_Gestion_Ecole\Projet_Gestion_Ecole\obj\Debug\Projet_Gestion_Ecole.csproj.GenerateResource.cache
+C:\Users\User\source\repos\Projet_Gestion_Ecole\Projet_Gestion_Ecole\obj\Debug\Projet_Gestion_Ecole.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Projet_Gestion_Ecole\Projet_Gestion_Ecole\obj\Debug\Projet_G.AD8D76CF.Up2Date
+C:\Users\User\source\repos\Projet_Gestion_Ecole\Projet_Gestion_Ecole\obj\Debug\Projet_Gestion_Ecole.exe
+C:\Users\User\source\repos\Projet_Gestion_Ecole\Projet_Gestion_Ecole\obj\Debug\Projet_Gestion_Ecole.pdb
+C:\Users\User\source\repos\Projet_Gestion_Ecole\Projet_Gestion_Ecole\obj\Debug\Projet_Gestion_Ecole.Migrations.first.resources
