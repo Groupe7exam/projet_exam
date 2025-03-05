@@ -185,6 +185,12 @@
     <Compile Include="UserControlAdminPage.Designer.cs">
       <DependentUpon>UserControlAdminPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="userControl\UserControlAdminPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControl\UserControlAdminPage.Designer.cs">
+      <DependentUpon>UserControlAdminPage.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AdminForm.resx">
       <DependentUpon>AdminForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -208,6 +214,9 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="UserControlAdminPage.resx">
+      <DependentUpon>UserControlAdminPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userControl\UserControlAdminPage.resx">
       <DependentUpon>UserControlAdminPage.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />

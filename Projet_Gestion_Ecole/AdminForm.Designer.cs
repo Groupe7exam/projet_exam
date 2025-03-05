@@ -31,19 +31,19 @@
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnHam = new System.Windows.Forms.PictureBox();
             this.SideBar = new System.Windows.Forms.FlowLayoutPanel();
             this.btnUser = new System.Windows.Forms.Button();
+            this.btnEtudiants = new System.Windows.Forms.Button();
             this.btnClasses = new System.Windows.Forms.Button();
             this.btnProfesseur = new System.Windows.Forms.Button();
             this.btnMatieres = new System.Windows.Forms.Button();
             this.btnNotes = new System.Windows.Forms.Button();
             this.Transition = new System.Windows.Forms.Timer(this.components);
-            this.btnHam = new System.Windows.Forms.PictureBox();
-            this.btnEtudiants = new System.Windows.Forms.Button();
             this.ShowPanel = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
-            this.SideBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnHam)).BeginInit();
+            this.SideBar.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -64,8 +64,19 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1144, 64);
+            this.panel1.Size = new System.Drawing.Size(1194, 64);
             this.panel1.TabIndex = 0;
+            // 
+            // btnHam
+            // 
+            this.btnHam.Image = global::Projet_Gestion_Ecole.Properties.Resources.Hamburger_icon_svg;
+            this.btnHam.Location = new System.Drawing.Point(12, 11);
+            this.btnHam.Name = "btnHam";
+            this.btnHam.Size = new System.Drawing.Size(45, 36);
+            this.btnHam.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnHam.TabIndex = 1;
+            this.btnHam.TabStop = false;
+            this.btnHam.Click += new System.EventHandler(this.btnHam_Click);
             // 
             // SideBar
             // 
@@ -79,7 +90,7 @@
             this.SideBar.Dock = System.Windows.Forms.DockStyle.Left;
             this.SideBar.Location = new System.Drawing.Point(0, 64);
             this.SideBar.Name = "SideBar";
-            this.SideBar.Size = new System.Drawing.Size(273, 598);
+            this.SideBar.Size = new System.Drawing.Size(273, 664);
             this.SideBar.TabIndex = 1;
             // 
             // btnUser
@@ -98,6 +109,23 @@
             this.btnUser.Text = "Utilisateurs";
             this.btnUser.UseVisualStyleBackColor = false;
             this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
+            // 
+            // btnEtudiants
+            // 
+            this.btnEtudiants.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.btnEtudiants.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.btnEtudiants.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.btnEtudiants.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.btnEtudiants.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnEtudiants.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEtudiants.ForeColor = System.Drawing.Color.GhostWhite;
+            this.btnEtudiants.Location = new System.Drawing.Point(3, 91);
+            this.btnEtudiants.Name = "btnEtudiants";
+            this.btnEtudiants.Size = new System.Drawing.Size(270, 82);
+            this.btnEtudiants.TabIndex = 3;
+            this.btnEtudiants.Text = "Etudiants";
+            this.btnEtudiants.UseVisualStyleBackColor = false;
+            this.btnEtudiants.Click += new System.EventHandler(this.btnEtudiants_Click);
             // 
             // btnClasses
             // 
@@ -172,46 +200,18 @@
             this.Transition.Interval = 10;
             this.Transition.Tick += new System.EventHandler(this.Transition_Tick);
             // 
-            // btnHam
-            // 
-            this.btnHam.Image = global::Projet_Gestion_Ecole.Properties.Resources.Hamburger_icon_svg;
-            this.btnHam.Location = new System.Drawing.Point(12, 11);
-            this.btnHam.Name = "btnHam";
-            this.btnHam.Size = new System.Drawing.Size(45, 36);
-            this.btnHam.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnHam.TabIndex = 1;
-            this.btnHam.TabStop = false;
-            this.btnHam.Click += new System.EventHandler(this.btnHam_Click);
-            // 
-            // btnEtudiants
-            // 
-            this.btnEtudiants.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.btnEtudiants.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.btnEtudiants.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.btnEtudiants.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.btnEtudiants.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnEtudiants.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEtudiants.ForeColor = System.Drawing.Color.GhostWhite;
-            this.btnEtudiants.Location = new System.Drawing.Point(3, 91);
-            this.btnEtudiants.Name = "btnEtudiants";
-            this.btnEtudiants.Size = new System.Drawing.Size(270, 82);
-            this.btnEtudiants.TabIndex = 3;
-            this.btnEtudiants.Text = "Etudiants";
-            this.btnEtudiants.UseVisualStyleBackColor = false;
-            this.btnEtudiants.Click += new System.EventHandler(this.btnEtudiants_Click);
-            // 
             // ShowPanel
             // 
             this.ShowPanel.Location = new System.Drawing.Point(268, 64);
             this.ShowPanel.Name = "ShowPanel";
-            this.ShowPanel.Size = new System.Drawing.Size(873, 598);
+            this.ShowPanel.Size = new System.Drawing.Size(934, 664);
             this.ShowPanel.TabIndex = 2;
             // 
             // AdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1144, 662);
+            this.ClientSize = new System.Drawing.Size(1194, 728);
             this.Controls.Add(this.ShowPanel);
             this.Controls.Add(this.SideBar);
             this.Controls.Add(this.panel1);
@@ -220,8 +220,8 @@
             this.Load += new System.EventHandler(this.AdminForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.SideBar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnHam)).EndInit();
+            this.SideBar.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

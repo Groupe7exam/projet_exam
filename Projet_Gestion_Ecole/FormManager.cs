@@ -70,7 +70,39 @@ namespace Projet_Gestion_Ecole
             InscriptionForm.Show();
         }
 
-        public static void showAdminForm(Panel panelContent)
+        public static void showAdminForm()
+        {
+            if (AdminForm == null || AdminForm.IsDisposed)
+            {
+                AdminForm = new AdminForm();
+            }
+
+            // Cache les autres formulaires si ils sont visibles
+            if (form1 != null && !form1.IsDisposed)
+            {
+                form1.Hide();
+            }
+            if (InscriptionForm != null && !InscriptionForm.IsDisposed)
+            {
+                InscriptionForm.Hide();
+            }
+            if (ProfForm != null && !ProfForm.IsDisposed)
+            {
+                ProfForm.Hide();
+            }
+            if (AgentForm != null && !AgentForm.IsDisposed)
+            {
+                AgentForm.Hide();
+            }
+            if (FormDE != null && !FormDE.IsDisposed)
+            {
+                FormDE.Hide();
+            }
+            AdminForm.Show();
+
+        }
+
+        public static void showAdminForm2(Panel panelContent)
         {
             if (AdminForm == null || AdminForm.IsDisposed)
             {
@@ -103,12 +135,10 @@ namespace Projet_Gestion_Ecole
             panelContent.Controls.Clear();
 
             // Ajoute un UserControl ou le formulaire désiré dans le Panel
-            UserControlAdminPage userControlAdmin = new UserControlAdminPage(); // Un exemple de UserControl pour l'admin
-            userControlAdmin.Dock = DockStyle.Fill;
+            userControl.UserControlAdminPage userControlAdmin = new userControl.UserControlAdminPage();
+            userControlAdmin.Dock = DockStyle.Fill;  // Assure que le UserControl occupe tout l'espace
             panelContent.Controls.Add(userControlAdmin);
         }
-
-
         public static void showProfForm()
         {
             if (ProfForm == null || ProfForm.IsDisposed)
@@ -196,12 +226,6 @@ namespace Projet_Gestion_Ecole
             FormDE.Show();
         }
 
-        public static void showUserPage(Panel panelContent)
-        {
-            UserControlUserPage userControl = new UserControlUserPage();
-            userControl.Dock = DockStyle.Fill;
-            panelContent.Controls.Clear();
-            panelContent.Controls.Add(userControl);
-        }
+       
     }
 }

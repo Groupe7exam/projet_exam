@@ -72,3 +72,5 @@ C:\Users\7MAKSACOD PC\Desktop\l3\l3 semestre 1\iot\projetcsharp\Projet_Gestion_E
 C:\Users\7MAKSACOD PC\Desktop\l3\l3 semestre 1\iot\projetcsharp\Projet_Gestion_Ecole\Projet_Gestion_Ecole\bin\Debug\BCrypt.Net-Next.dll
 C:\Users\7MAKSACOD PC\Desktop\l3\l3 semestre 1\iot\projetcsharp\Projet_Gestion_Ecole\Projet_Gestion_Ecole\bin\Debug\BCrypt.Net-Next.xml
 C:\Users\7MAKSACOD PC\Desktop\l3\l3 semestre 1\iot\projetcsharp\Projet_Gestion_Ecole\Projet_Gestion_Ecole\obj\Debug\Projet_Gestion_Ecole.AdminForm.resources
+C:\Users\7MAKSACOD PC\Desktop\l3\l3 semestre 1\iot\projetcsharp\Projet_Gestion_Ecole\Projet_Gestion_Ecole\obj\Debug\Projet_Gestion_Ecole.UserControlAdminPage.resources
+C:\Users\7MAKSACOD PC\Desktop\l3\l3 semestre 1\iot\projetcsharp\Projet_Gestion_Ecole\Projet_Gestion_Ecole\obj\Debug\Projet_Gestion_Ecole.userControl.UserControlAdminPage.resources

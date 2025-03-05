@@ -101,36 +101,24 @@ namespace Projet_Gestion_Ecole
             using (var db = new DBconnect())
             {
                 var user = db.Utilisateurs.FirstOrDefault(u => u.NomUtilisateur == nomUser);
-                if (user != null)
-                {
-                    // Affichage d'un message pour vérifier que l'utilisateur est trouvé
-                    MessageBox.Show("Utilisateur trouvé, vérification du mot de passe...");
+                if (user != null) { 
 
-                    // Comparaison du mot de passe avec celui haché dans la base de données
                     if (BCrypt.Net.BCrypt.Verify(password, user.MotDePasse))
                     {
-                        // Affichage d'un message de succès pour vérifier si la connexion est réussie
-                        MessageBox.Show("Mot de passe correct, redirection...");
-
-                        // Vérification du rôle et ouverture du formulaire correspondant
                         if (user.Role == "ADMIN")
                         {
-                            MessageBox.Show("Redirection vers Admin");
                             FormManager.showAdminForm();
                         }
                         else if (user.Role == "DE")
                         {
-                            MessageBox.Show("Redirection vers DE");
                             FormManager.showFormDE();
                         }
                         else if (user.Role == "Agent")
                         {
-                            MessageBox.Show("Redirection vers Agent");
                             FormManager.showAgentForm();
                         }
                         else if (user.Role == "Professeur")
                         {
-                            MessageBox.Show("Redirection vers Professeur");
                             FormManager.showProfForm();
                         }
                     }
@@ -146,5 +134,9 @@ namespace Projet_Gestion_Ecole
             }
         }
 
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
