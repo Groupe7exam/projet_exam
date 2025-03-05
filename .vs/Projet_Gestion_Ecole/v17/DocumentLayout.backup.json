@@ -1,10 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\Projet_Gestion_Ecole\\",
+  "WorkspaceRootPath": "C:\\Users\\7MAKSACOD PC\\Desktop\\l3\\l3 semestre 1\\iot\\projetcsharp\\Projet_Gestion_Ecole\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C4EFB917-D12F-4D15-8CCE-09D96A1E4D91}|Projet_Gestion_Ecole\\Projet_Gestion_Ecole.csproj|c:\\users\\user\\source\\repos\\projet_gestion_ecole\\projet_gestion_ecole\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{C4EFB917-D12F-4D15-8CCE-09D96A1E4D91}|Projet_Gestion_Ecole\\Projet_Gestion_Ecole.csproj|C:\\Users\\7MAKSACOD PC\\Desktop\\l3\\l3 semestre 1\\iot\\projetcsharp\\Projet_Gestion_Ecole\\projet_gestion_ecole\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4EFB917-D12F-4D15-8CCE-09D96A1E4D91}|Projet_Gestion_Ecole\\Projet_Gestion_Ecole.csproj|solutionrelative:projet_gestion_ecole\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4EFB917-D12F-4D15-8CCE-09D96A1E4D91}|Projet_Gestion_Ecole\\Projet_Gestion_Ecole.csproj|c:\\users\\7maksacod pc\\desktop\\l3\\l3 semestre 1\\iot\\projetcsharp\\projet_gestion_ecole\\projet_gestion_ecole\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C4EFB917-D12F-4D15-8CCE-09D96A1E4D91}|Projet_Gestion_Ecole\\Projet_Gestion_Ecole.csproj|solutionrelative:projet_gestion_ecole\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4EFB917-D12F-4D15-8CCE-09D96A1E4D91}|Projet_Gestion_Ecole\\Projet_Gestion_Ecole.csproj|c:\\users\\7maksacod pc\\desktop\\l3\\l3 semestre 1\\iot\\projetcsharp\\projet_gestion_ecole\\projet_gestion_ecole\\inscriptionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4EFB917-D12F-4D15-8CCE-09D96A1E4D91}|Projet_Gestion_Ecole\\Projet_Gestion_Ecole.csproj|solutionrelative:projet_gestion_ecole\\inscriptionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4EFB917-D12F-4D15-8CCE-09D96A1E4D91}|Projet_Gestion_Ecole\\Projet_Gestion_Ecole.csproj|c:\\users\\7maksacod pc\\desktop\\l3\\l3 semestre 1\\iot\\projetcsharp\\projet_gestion_ecole\\projet_gestion_ecole\\formmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4EFB917-D12F-4D15-8CCE-09D96A1E4D91}|Projet_Gestion_Ecole\\Projet_Gestion_Ecole.csproj|solutionrelative:projet_gestion_ecole\\formmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4EFB917-D12F-4D15-8CCE-09D96A1E4D91}|Projet_Gestion_Ecole\\Projet_Gestion_Ecole.csproj|c:\\users\\7maksacod pc\\desktop\\l3\\l3 semestre 1\\iot\\projetcsharp\\projet_gestion_ecole\\projet_gestion_ecole\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C4EFB917-D12F-4D15-8CCE-09D96A1E4D91}|Projet_Gestion_Ecole\\Projet_Gestion_Ecole.csproj|solutionrelative:projet_gestion_ecole\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4EFB917-D12F-4D15-8CCE-09D96A1E4D91}|Projet_Gestion_Ecole\\Projet_Gestion_Ecole.csproj|c:\\users\\7maksacod pc\\desktop\\l3\\l3 semestre 1\\iot\\projetcsharp\\projet_gestion_ecole\\projet_gestion_ecole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4EFB917-D12F-4D15-8CCE-09D96A1E4D91}|Projet_Gestion_Ecole\\Projet_Gestion_Ecole.csproj|solutionrelative:projet_gestion_ecole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4EFB917-D12F-4D15-8CCE-09D96A1E4D91}|Projet_Gestion_Ecole\\Projet_Gestion_Ecole.csproj|C:\\Users\\7MAKSACOD PC\\Desktop\\l3\\l3 semestre 1\\iot\\projetcsharp\\Projet_Gestion_Ecole\\projet_gestion_ecole\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{C4EFB917-D12F-4D15-8CCE-09D96A1E4D91}|Projet_Gestion_Ecole\\Projet_Gestion_Ecole.csproj|solutionrelative:projet_gestion_ecole\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4EFB917-D12F-4D15-8CCE-09D96A1E4D91}|Projet_Gestion_Ecole\\Projet_Gestion_Ecole.csproj|C:\\Users\\7MAKSACOD PC\\Desktop\\l3\\l3 semestre 1\\iot\\projetcsharp\\Projet_Gestion_Ecole\\projet_gestion_ecole\\dao\\classe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4EFB917-D12F-4D15-8CCE-09D96A1E4D91}|Projet_Gestion_Ecole\\Projet_Gestion_Ecole.csproj|solutionrelative:projet_gestion_ecole\\dao\\classe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,43 +42,108 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 3,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormManager.cs",
+              "DocumentMoniker": "C:\\Users\\7MAKSACOD PC\\Desktop\\l3\\l3 semestre 1\\iot\\projetcsharp\\Projet_Gestion_Ecole\\Projet_Gestion_Ecole\\FormManager.cs",
+              "RelativeDocumentMoniker": "Projet_Gestion_Ecole\\FormManager.cs",
+              "ToolTip": "C:\\Users\\7MAKSACOD PC\\Desktop\\l3\\l3 semestre 1\\iot\\projetcsharp\\Projet_Gestion_Ecole\\Projet_Gestion_Ecole\\FormManager.cs",
+              "RelativeToolTip": "Projet_Gestion_Ecole\\FormManager.cs",
+              "ViewState": "AgIAAJoAAAAAAAAAAAAAALsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T03:17:27.374Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InscriptionForm.cs",
+              "DocumentMoniker": "C:\\Users\\7MAKSACOD PC\\Desktop\\l3\\l3 semestre 1\\iot\\projetcsharp\\Projet_Gestion_Ecole\\Projet_Gestion_Ecole\\InscriptionForm.cs",
+              "RelativeDocumentMoniker": "Projet_Gestion_Ecole\\InscriptionForm.cs",
+              "ToolTip": "C:\\Users\\7MAKSACOD PC\\Desktop\\l3\\l3 semestre 1\\iot\\projetcsharp\\Projet_Gestion_Ecole\\Projet_Gestion_Ecole\\InscriptionForm.cs",
+              "RelativeToolTip": "Projet_Gestion_Ecole\\InscriptionForm.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAAABwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T03:06:10.583Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\7MAKSACOD PC\\Desktop\\l3\\l3 semestre 1\\iot\\projetcsharp\\Projet_Gestion_Ecole\\Projet_Gestion_Ecole\\AdminForm.cs",
+              "RelativeDocumentMoniker": "Projet_Gestion_Ecole\\AdminForm.cs",
+              "ToolTip": "C:\\Users\\7MAKSACOD PC\\Desktop\\l3\\l3 semestre 1\\iot\\projetcsharp\\Projet_Gestion_Ecole\\Projet_Gestion_Ecole\\AdminForm.cs [Design]",
+              "RelativeToolTip": "Projet_Gestion_Ecole\\AdminForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T01:52:17.745Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Projet_Gestion_Ecole\\Projet_Gestion_Ecole\\Form1.cs",
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\7MAKSACOD PC\\Desktop\\l3\\l3 semestre 1\\iot\\projetcsharp\\Projet_Gestion_Ecole\\Projet_Gestion_Ecole\\Form1.cs",
               "RelativeDocumentMoniker": "Projet_Gestion_Ecole\\Form1.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Projet_Gestion_Ecole\\Projet_Gestion_Ecole\\Form1.cs [Design]",
-              "RelativeToolTip": "Projet_Gestion_Ecole\\Form1.cs [Design]",
+              "ToolTip": "C:\\Users\\7MAKSACOD PC\\Desktop\\l3\\l3 semestre 1\\iot\\projetcsharp\\Projet_Gestion_Ecole\\Projet_Gestion_Ecole\\Form1.cs*",
+              "RelativeToolTip": "Projet_Gestion_Ecole\\Form1.cs*",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAwwHMAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T23:04:55.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\7MAKSACOD PC\\Desktop\\l3\\l3 semestre 1\\iot\\projetcsharp\\Projet_Gestion_Ecole\\Projet_Gestion_Ecole\\Form1.cs",
+              "RelativeDocumentMoniker": "Projet_Gestion_Ecole\\Form1.cs",
+              "ToolTip": "C:\\Users\\7MAKSACOD PC\\Desktop\\l3\\l3 semestre 1\\iot\\projetcsharp\\Projet_Gestion_Ecole\\Projet_Gestion_Ecole\\Form1.cs [Design]*",
+              "RelativeToolTip": "Projet_Gestion_Ecole\\Form1.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-04T15:55:54.585Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\7MAKSACOD PC\\Desktop\\l3\\l3 semestre 1\\iot\\projetcsharp\\Projet_Gestion_Ecole\\Projet_Gestion_Ecole\\Program.cs",
+              "RelativeDocumentMoniker": "Projet_Gestion_Ecole\\Program.cs",
+              "ToolTip": "C:\\Users\\7MAKSACOD PC\\Desktop\\l3\\l3 semestre 1\\iot\\projetcsharp\\Projet_Gestion_Ecole\\Projet_Gestion_Ecole\\Program.cs",
+              "RelativeToolTip": "Projet_Gestion_Ecole\\Program.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAmwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T00:51:22.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\7MAKSACOD PC\\Desktop\\l3\\l3 semestre 1\\iot\\projetcsharp\\Projet_Gestion_Ecole\\Projet_Gestion_Ecole\\App.config",
+              "RelativeDocumentMoniker": "Projet_Gestion_Ecole\\App.config",
+              "ToolTip": "C:\\Users\\7MAKSACOD PC\\Desktop\\l3\\l3 semestre 1\\iot\\projetcsharp\\Projet_Gestion_Ecole\\Projet_Gestion_Ecole\\App.config",
+              "RelativeToolTip": "Projet_Gestion_Ecole\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvw0AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-03-04T20:03:58.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Classe.cs",
+              "DocumentMoniker": "C:\\Users\\7MAKSACOD PC\\Desktop\\l3\\l3 semestre 1\\iot\\projetcsharp\\Projet_Gestion_Ecole\\Projet_Gestion_Ecole\\DAO\\Classe.cs",
+              "RelativeDocumentMoniker": "Projet_Gestion_Ecole\\DAO\\Classe.cs",
+              "ToolTip": "C:\\Users\\7MAKSACOD PC\\Desktop\\l3\\l3 semestre 1\\iot\\projetcsharp\\Projet_Gestion_Ecole\\Projet_Gestion_Ecole\\DAO\\Classe.cs",
+              "RelativeToolTip": "Projet_Gestion_Ecole\\DAO\\Classe.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T18:30:52.164Z"
             }
           ]
         }

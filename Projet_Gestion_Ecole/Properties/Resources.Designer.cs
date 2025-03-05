@@ -8,10 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Projet_Gestion_Ecole.Properties
-{
-
-
+namespace Projet_Gestion_Ecole.Properties {
+    using System;
+    
+    
     /// <summary>
     ///   Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
     /// </summary>
@@ -19,52 +19,165 @@ namespace Projet_Gestion_Ecole.Properties
     // à l'aide d'un outil, tel que ResGen ou Visual Studio.
     // Pour ajouter ou supprimer un membre, modifiez votre fichier .ResX, puis réexécutez ResGen
     // avec l'option /str ou régénérez votre projet VS.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources
-    {
-
+    internal class Resources {
+        
         private static global::System.Resources.ResourceManager resourceMan;
-
+        
         private static global::System.Globalization.CultureInfo resourceCulture;
-
+        
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources()
-        {
+        internal Resources() {
         }
-
+        
         /// <summary>
         ///   Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager
-        {
-            get
-            {
-                if ((resourceMan == null))
-                {
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Projet_Gestion_Ecole.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
             }
         }
-
+        
         /// <summary>
         ///   Remplace la propriété CurrentUICulture du thread actuel pour toutes
         ///   les recherches de ressources à l'aide de cette classe de ressource fortement typée.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture
-        {
-            get
-            {
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
                 return resourceCulture;
             }
-            set
-            {
+            set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1077114 {
+            get {
+                object obj = ResourceManager.GetObject("1077114", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _2bbbe1a167db44943b24c454bcf0b1fb {
+            get {
+                object obj = ResourceManager.GetObject("2bbbe1a167db44943b24c454bcf0b1fb", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _2bbbe1a167db44943b24c454bcf0b1fb1 {
+            get {
+                object obj = ResourceManager.GetObject("2bbbe1a167db44943b24c454bcf0b1fb1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _49683958_icône_utilisateur_vecteur {
+            get {
+                object obj = ResourceManager.GetObject("49683958-icône-utilisateur-vecteur", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _9c1ccc8bfd376eecd216bf88c4879c1a {
+            get {
+                object obj = ResourceManager.GetObject("9c1ccc8bfd376eecd216bf88c4879c1a", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fond_ecran_wallpaper_iphone_12_pro_officiel_apple_4 {
+            get {
+                object obj = ResourceManager.GetObject("fond-ecran-wallpaper-iphone-12-pro-officiel-apple-4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hamburger_icon_svg {
+            get {
+                object obj = ResourceManager.GetObject("Hamburger_icon.svg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Jdiucysm_400x400 {
+            get {
+                object obj = ResourceManager.GetObject("Jdiucysm_400x400", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Jdiucysm_400x4001 {
+            get {
+                object obj = ResourceManager.GetObject("Jdiucysm_400x4001", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logo_ATT {
+            get {
+                object obj = ResourceManager.GetObject("Logo-ATT", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap png_clipart_computer_icons_login_adityaram_properties_business_business_blue_people {
+            get {
+                object obj = ResourceManager.GetObject("png-clipart-computer-icons-login-adityaram-properties-business-business-blue-peop" +
+                        "le", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap png_clipart_e_commerce_android_business_password_android_blue_logo {
+            get {
+                object obj = ResourceManager.GetObject("png-clipart-e-commerce-android-business-password-android-blue-logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }
