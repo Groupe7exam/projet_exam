@@ -7,6 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Vonage;
+using Vonage.Request;
+using Vonage.Messaging;
+using Vonage.Messages.Sms;
+
+
 
 namespace Projet_Gestion_Ecole
 {
@@ -86,7 +92,7 @@ namespace Projet_Gestion_Ecole
             FormManager.showInscriptionForm();
         }
 
-        private void btnConnexion_Click(object sender, EventArgs e)
+        private async void btnConnexion_Click(object sender, EventArgs e)
         {
             string nomUser = txtUser.Text;
             string password = txtPassword.Text;
@@ -101,25 +107,27 @@ namespace Projet_Gestion_Ecole
             using (var db = new DBconnect())
             {
                 var user = db.Utilisateurs.FirstOrDefault(u => u.NomUtilisateur == nomUser);
-                if (user != null) { 
-
+                if (user != null)
+                {
                     if (BCrypt.Net.BCrypt.Verify(password, user.MotDePasse))
                     {
-                        if (user.Role == "ADMIN")
+                        // Générer un code de vérification
+                        string verificationCode = GenerateVerificationCode();
+
+                        // Envoyer le code par SMS
+                        await SendSmsAsync(user.Telephone, verificationCode);
+
+                        // Demander à l'utilisateur de saisir le code de vérification
+                        string inputCode = PromptForCode();
+
+                        if (inputCode == verificationCode)
                         {
-                            FormManager.showAdminForm();
+                            // Connexion réussie
+                            NavigateToUserRole(user.Role);
                         }
-                        else if (user.Role == "DE")
+                        else
                         {
-                            FormManager.showFormDE();
-                        }
-                        else if (user.Role == "Agent")
-                        {
-                            FormManager.showAgentForm();
-                        }
-                        else if (user.Role == "Professeur")
-                        {
-                            FormManager.showProfForm();
+                            MessageBox.Show("Code de vérification incorrect", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                     }
                     else
@@ -133,6 +141,79 @@ namespace Projet_Gestion_Ecole
                 }
             }
         }
+
+        private string PromptForCode()
+        {
+            // Création d'une boîte de dialogue personnalisée pour demander le code
+            Form prompt = new Form()
+            {
+                Width = 300,
+                Height = 150,
+                Text = "Vérification A2F"
+            };
+
+            Label textLabel = new Label() { Left = 20, Top = 20, Text = "Entrez le code de vérification:" };
+            TextBox textBox = new TextBox() { Left = 20, Top = 50, Width = 240 };
+            Button confirmation = new Button() { Text = "Ok", Left = 200, Width = 60, Top = 70 };
+            confirmation.Click += (sender, e) => { prompt.Close(); };
+            prompt.Controls.Add(textLabel);
+            prompt.Controls.Add(textBox);
+            prompt.Controls.Add(confirmation);
+            prompt.ShowDialog();
+
+            return textBox.Text;
+        }
+
+        private async Task SendSmsAsync(string to, string code)
+        {
+            var credentials = Credentials.FromApiKeyAndSecret("8209fdeb", "P3HsylzqxPE1TjPh");
+            var client = new VonageClient(credentials);
+
+            var smsRequest = new SendSmsRequest
+            {
+                To = to,
+                From = to, // Remplacez par un numéro enregistré chez Vonage
+                Text = $"Votre code de vérification est : {code}"
+            };
+
+            var response = await client.SmsClient.SendAnSmsAsync(smsRequest);
+
+            if (response.Messages[0].Status != "0")
+            {
+                MessageBox.Show($"Erreur lors de l'envoi du SMS: {response.Messages[0].ErrorText}");
+            }
+        }
+
+
+        private string GenerateVerificationCode(int length = 6)
+        {
+            Random random = new Random();
+            return random.Next(0, (int)Math.Pow(10, length)).ToString("D" + length);
+        }
+
+        private void NavigateToUserRole(string role)
+        {
+            switch (role)
+            {
+                case "ADMIN":
+                    FormManager.showAdminForm();
+                    break;
+                case "DE":
+                    FormManager.showFormDE();
+                    break;
+                case "Agent":
+                    FormManager.showAgentForm();
+                    break;
+                case "Professeur":
+                    FormManager.showProfForm();
+                    break;
+                default:
+                    MessageBox.Show("Rôle inconnu", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    break;
+            }
+        }
+
+
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
