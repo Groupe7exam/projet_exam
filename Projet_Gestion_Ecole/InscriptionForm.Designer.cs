@@ -39,6 +39,8 @@
             this.btnInscription = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.ConnexionPage = new System.Windows.Forms.Label();
+            this.cmbRole = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
@@ -130,7 +132,7 @@
             this.btnInscription.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnInscription.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInscription.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btnInscription.Location = new System.Drawing.Point(602, 607);
+            this.btnInscription.Location = new System.Drawing.Point(596, 689);
             this.btnInscription.Name = "btnInscription";
             this.btnInscription.Size = new System.Drawing.Size(212, 49);
             this.btnInscription.TabIndex = 18;
@@ -153,18 +155,43 @@
             this.ConnexionPage.AutoSize = true;
             this.ConnexionPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ConnexionPage.ForeColor = System.Drawing.Color.Teal;
-            this.ConnexionPage.Location = new System.Drawing.Point(647, 694);
+            this.ConnexionPage.Location = new System.Drawing.Point(685, 741);
             this.ConnexionPage.Name = "ConnexionPage";
             this.ConnexionPage.Size = new System.Drawing.Size(167, 25);
             this.ConnexionPage.TabIndex = 20;
             this.ConnexionPage.Text = "Deja un Compte";
             this.ConnexionPage.Click += new System.EventHandler(this.ConnexionPage_Click);
             // 
+            // cmbRole
+            // 
+            this.cmbRole.FormattingEnabled = true;
+            this.cmbRole.Items.AddRange(new object[] {
+            "ADMIN",
+            "DE",
+            "Agent",
+            "Professeur"});
+            this.cmbRole.Location = new System.Drawing.Point(550, 621);
+            this.cmbRole.Name = "cmbRole";
+            this.cmbRole.Size = new System.Drawing.Size(302, 28);
+            this.cmbRole.TabIndex = 22;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(545, 582);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(61, 26);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "Role";
+            // 
             // InscriptionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(943, 785);
+            this.Controls.Add(this.cmbRole);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.ConnexionPage);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.btnInscription);
@@ -199,5 +226,7 @@
         private System.Windows.Forms.Button btnInscription;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label ConnexionPage;
+        private System.Windows.Forms.ComboBox cmbRole;
+        private System.Windows.Forms.Label label1;
     }
 }

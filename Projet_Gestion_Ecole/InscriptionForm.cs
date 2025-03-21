@@ -31,9 +31,9 @@ namespace Projet_Gestion_Ecole
                 string nom = txtUser.Text.Trim();
                 string telephone = txtTel.Text.Trim();
                 string motDePasse = txtPassword.Text.Trim();
-
+                string role   = cmbRole.Text.Trim();
                 // Vérification des champs
-                if (string.IsNullOrEmpty(nom) || string.IsNullOrEmpty(telephone) || string.IsNullOrEmpty(motDePasse))
+                if (string.IsNullOrEmpty(nom) || string.IsNullOrEmpty(nom) || string.IsNullOrEmpty(telephone) || string.IsNullOrEmpty(motDePasse))
                 {
                     MessageBox.Show("Veuillez remplir tous les champs", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
@@ -61,7 +61,8 @@ namespace Projet_Gestion_Ecole
                     {
                         NomUtilisateur = nom,
                         Telephone = telephone,
-                        MotDePasse = motDePasseHache // On stocke le mot de passe sécurisé
+                        MotDePasse = motDePasseHache, // On stocke le mot de passe sécurisé
+                        Role = role
                     };
 
                     db.Utilisateurs.Add(u);
