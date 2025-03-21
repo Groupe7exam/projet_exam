@@ -226,6 +226,185 @@ namespace Projet_Gestion_Ecole
             FormDE.Show();
         }
 
-       
+
+        public static void showClasseForm(Panel panelContent)
+        {
+            if (AdminForm == null || AdminForm.IsDisposed)
+            {
+                AdminForm = new AdminForm();
+            }
+
+            if (form1 != null && !form1.IsDisposed)
+            {
+                form1.Hide();
+            }
+            if (InscriptionForm != null && !InscriptionForm.IsDisposed)
+            {
+                InscriptionForm.Hide();
+            }
+
+            panelContent.Controls.Clear();
+
+            // Ajoute un UserControl ou le formulaire désiré dans le Panel
+            userControl.UserControlClassePage userControlCl = new userControl.UserControlClassePage();
+            userControlCl.Dock = DockStyle.Fill;  // Assure que le UserControl occupe tout l'espace
+            panelContent.Controls.Add(userControlCl);
+        }
+
+        public static void showProfesseurForm(Panel panelContent)
+        {
+            if (AdminForm == null || AdminForm.IsDisposed)
+            {
+                AdminForm = new AdminForm();
+            }
+
+            if (form1 != null && !form1.IsDisposed)
+            {
+                form1.Hide();
+            }
+            if (InscriptionForm != null && !InscriptionForm.IsDisposed)
+            {
+                InscriptionForm.Hide();
+            }
+
+            panelContent.Controls.Clear();
+
+            // Ajoute un UserControl ou le formulaire désiré dans le Panel
+            userControl.UserControlProfesseur userControlCl = new userControl.UserControlProfesseur();
+            userControlCl.Dock = DockStyle.Fill;  // Assure que le UserControl occupe tout l'espace
+            panelContent.Controls.Add(userControlCl);
+        }
+
+        public static void showMatiereForm(Panel panelContent)
+        {
+            if (AdminForm == null || AdminForm.IsDisposed)
+            {
+                AdminForm = new AdminForm();
+            }
+
+            if (form1 != null && !form1.IsDisposed)
+            {
+                form1.Hide();
+            }
+            if (InscriptionForm != null && !InscriptionForm.IsDisposed)
+            {
+                InscriptionForm.Hide();
+            }
+
+            panelContent.Controls.Clear();
+
+            // Ajoute un UserControl ou le formulaire désiré dans le Panel
+            userControl.UserControl1Matiere userControlCl = new userControl.UserControl1Matiere();
+            userControlCl.Dock = DockStyle.Fill;  // Assure que le UserControl occupe tout l'espace
+            panelContent.Controls.Add(userControlCl);
+        }
+
+        public static void showEtudiantForm(Panel panelContent)
+        {
+            if (AdminForm == null || AdminForm.IsDisposed)
+            {
+                AdminForm = new AdminForm();
+            }
+
+            if (form1 != null && !form1.IsDisposed)
+            {
+                form1.Hide();
+            }
+            if (InscriptionForm != null && !InscriptionForm.IsDisposed)
+            {
+                InscriptionForm.Hide();
+            }
+
+            panelContent.Controls.Clear();
+
+            // Ajoute un UserControl ou le formulaire désiré dans le Panel
+            userControl.UserControlEtudiant userControlCl = new userControl.UserControlEtudiant();
+            userControlCl.Dock = DockStyle.Fill;  // Assure que le UserControl occupe tout l'espace
+            panelContent.Controls.Add(userControlCl);
+        }
+
+        public static void showCoursForm(Panel panelContent)
+        {
+            if (AdminForm == null || AdminForm.IsDisposed)
+            {
+                AdminForm = new AdminForm();
+            }
+
+            if (form1 != null && !form1.IsDisposed)
+            {
+                form1.Hide();
+            }
+            if (InscriptionForm != null && !InscriptionForm.IsDisposed)
+            {
+                InscriptionForm.Hide();
+            }
+
+            panelContent.Controls.Clear();
+
+            // Ajoute un UserControl ou le formulaire désiré dans le Panel
+            userControl.UserControlCours userControlCl = new userControl.UserControlCours();
+            userControlCl.Dock = DockStyle.Fill;  // Assure que le UserControl occupe tout l'espace
+            panelContent.Controls.Add(userControlCl);
+        }
+
+        public static void showNoteForm(Panel panelContent)
+        {
+            if (AdminForm == null || AdminForm.IsDisposed)
+            {
+                AdminForm = new AdminForm();
+            }
+
+            if (form1 != null && !form1.IsDisposed)
+            {
+                form1.Hide();
+            }
+            if (InscriptionForm != null && !InscriptionForm.IsDisposed)
+            {
+                InscriptionForm.Hide();
+            }
+
+            panelContent.Controls.Clear();
+
+            // Ajoute un UserControl ou le formulaire désiré dans le Panel
+            userControl.UserControlNotes userControlCl = new userControl.UserControlNotes();
+            userControlCl.Dock = DockStyle.Fill;  // Assure que le UserControl occupe tout l'espace
+            panelContent.Controls.Add(userControlCl);
+        }
+
+        public static void showRapportForm(Panel panelContent)
+        {
+            if (AdminForm == null || AdminForm.IsDisposed)
+            {
+                AdminForm = new AdminForm();
+            }
+
+            if (form1 != null && !form1.IsDisposed)
+            {
+                form1.Hide();
+            }
+            if (InscriptionForm != null && !InscriptionForm.IsDisposed)
+            {
+                InscriptionForm.Hide();
+            }
+
+            panelContent.Controls.Clear();
+
+            // Ajoute un UserControl ou le formulaire désiré dans le Panel
+            userControl.UserRapports userControlCl = new userControl.UserRapports();
+            userControlCl.Dock = DockStyle.Fill;  // Assure que le UserControl occupe tout l'espace
+            panelContent.Controls.Add(userControlCl);
+        }
+
+        public static void showtestForm(Panel panelContent)
+        {
+           
+            panelContent.Controls.Clear();
+
+            // Ajoute un UserControl ou le formulaire désiré dans le Panel
+            userControl.UserControltest userControlCl = new userControl.UserControltest();
+            userControlCl.Dock = DockStyle.Fill;  // Assure que le UserControl occupe tout l'espace
+            panelContent.Controls.Add(userControlCl);
+        }
+
     }
 }

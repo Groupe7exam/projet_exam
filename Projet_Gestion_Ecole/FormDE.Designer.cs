@@ -28,12 +28,262 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnHam = new System.Windows.Forms.PictureBox();
+            this.SideBar = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnEtudiants = new System.Windows.Forms.Button();
+            this.btnClasses = new System.Windows.Forms.Button();
+            this.btnProfesseur = new System.Windows.Forms.Button();
+            this.btnMatieres = new System.Windows.Forms.Button();
+            this.btnNotes = new System.Windows.Forms.Button();
+            this.btnCours = new System.Windows.Forms.Button();
+            this.btnRapport = new System.Windows.Forms.Button();
+            this.ShowPanel = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnHam)).BeginInit();
+            this.SideBar.SuspendLayout();
+            this.ShowPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.btnHam);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1924, 64);
+            this.panel1.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(72, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(90, 25);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Page DE";
+            // 
+            // btnHam
+            // 
+            this.btnHam.Image = global::Projet_Gestion_Ecole.Properties.Resources.Hamburger_icon_svg;
+            this.btnHam.Location = new System.Drawing.Point(12, 11);
+            this.btnHam.Name = "btnHam";
+            this.btnHam.Size = new System.Drawing.Size(45, 36);
+            this.btnHam.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnHam.TabIndex = 1;
+            this.btnHam.TabStop = false;
+            // 
+            // SideBar
+            // 
+            this.SideBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.SideBar.Controls.Add(this.btnEtudiants);
+            this.SideBar.Controls.Add(this.btnClasses);
+            this.SideBar.Controls.Add(this.btnProfesseur);
+            this.SideBar.Controls.Add(this.btnMatieres);
+            this.SideBar.Controls.Add(this.btnNotes);
+            this.SideBar.Controls.Add(this.btnCours);
+            this.SideBar.Controls.Add(this.btnRapport);
+            this.SideBar.Dock = System.Windows.Forms.DockStyle.Left;
+            this.SideBar.Location = new System.Drawing.Point(0, 64);
+            this.SideBar.Name = "SideBar";
+            this.SideBar.Size = new System.Drawing.Size(273, 986);
+            this.SideBar.TabIndex = 4;
+            // 
+            // btnEtudiants
+            // 
+            this.btnEtudiants.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.btnEtudiants.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.btnEtudiants.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.btnEtudiants.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.btnEtudiants.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnEtudiants.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEtudiants.ForeColor = System.Drawing.Color.GhostWhite;
+            this.btnEtudiants.Location = new System.Drawing.Point(3, 3);
+            this.btnEtudiants.Name = "btnEtudiants";
+            this.btnEtudiants.Size = new System.Drawing.Size(270, 82);
+            this.btnEtudiants.TabIndex = 3;
+            this.btnEtudiants.Text = "Etudiants";
+            this.btnEtudiants.UseVisualStyleBackColor = false;
+            this.btnEtudiants.Click += new System.EventHandler(this.btnEtudiants_Click_1);
+            // 
+            // btnClasses
+            // 
+            this.btnClasses.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.btnClasses.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.btnClasses.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.btnClasses.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.btnClasses.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnClasses.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClasses.ForeColor = System.Drawing.Color.GhostWhite;
+            this.btnClasses.Location = new System.Drawing.Point(3, 91);
+            this.btnClasses.Name = "btnClasses";
+            this.btnClasses.Size = new System.Drawing.Size(270, 82);
+            this.btnClasses.TabIndex = 4;
+            this.btnClasses.Text = "Classes";
+            this.btnClasses.UseVisualStyleBackColor = false;
+            this.btnClasses.Click += new System.EventHandler(this.btnClasses_Click_1);
+            // 
+            // btnProfesseur
+            // 
+            this.btnProfesseur.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.btnProfesseur.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.btnProfesseur.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.btnProfesseur.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.btnProfesseur.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnProfesseur.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProfesseur.ForeColor = System.Drawing.Color.GhostWhite;
+            this.btnProfesseur.Location = new System.Drawing.Point(3, 179);
+            this.btnProfesseur.Name = "btnProfesseur";
+            this.btnProfesseur.Size = new System.Drawing.Size(270, 82);
+            this.btnProfesseur.TabIndex = 5;
+            this.btnProfesseur.Text = "Professeurs";
+            this.btnProfesseur.UseVisualStyleBackColor = false;
+            this.btnProfesseur.Click += new System.EventHandler(this.btnProfesseur_Click_1);
+            // 
+            // btnMatieres
+            // 
+            this.btnMatieres.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.btnMatieres.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.btnMatieres.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.btnMatieres.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.btnMatieres.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnMatieres.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMatieres.ForeColor = System.Drawing.Color.GhostWhite;
+            this.btnMatieres.Location = new System.Drawing.Point(3, 267);
+            this.btnMatieres.Name = "btnMatieres";
+            this.btnMatieres.Size = new System.Drawing.Size(270, 82);
+            this.btnMatieres.TabIndex = 6;
+            this.btnMatieres.Text = "Matieres";
+            this.btnMatieres.UseVisualStyleBackColor = false;
+            this.btnMatieres.Click += new System.EventHandler(this.btnMatieres_Click_1);
+            // 
+            // btnNotes
+            // 
+            this.btnNotes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.btnNotes.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.btnNotes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.btnNotes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.btnNotes.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnNotes.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNotes.ForeColor = System.Drawing.Color.GhostWhite;
+            this.btnNotes.Location = new System.Drawing.Point(3, 355);
+            this.btnNotes.Name = "btnNotes";
+            this.btnNotes.Size = new System.Drawing.Size(270, 82);
+            this.btnNotes.TabIndex = 7;
+            this.btnNotes.Text = "Notes";
+            this.btnNotes.UseVisualStyleBackColor = true;
+            this.btnNotes.Click += new System.EventHandler(this.btnNotes_Click_1);
+            // 
+            // btnCours
+            // 
+            this.btnCours.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.btnCours.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.btnCours.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.btnCours.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.btnCours.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCours.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCours.ForeColor = System.Drawing.Color.GhostWhite;
+            this.btnCours.Location = new System.Drawing.Point(3, 443);
+            this.btnCours.Name = "btnCours";
+            this.btnCours.Size = new System.Drawing.Size(270, 82);
+            this.btnCours.TabIndex = 8;
+            this.btnCours.Text = "Cours";
+            this.btnCours.UseVisualStyleBackColor = false;
+            this.btnCours.Click += new System.EventHandler(this.btnCours_Click_1);
+            // 
+            // btnRapport
+            // 
+            this.btnRapport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.btnRapport.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.btnRapport.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.btnRapport.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.btnRapport.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnRapport.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRapport.ForeColor = System.Drawing.Color.GhostWhite;
+            this.btnRapport.Location = new System.Drawing.Point(3, 531);
+            this.btnRapport.Name = "btnRapport";
+            this.btnRapport.Size = new System.Drawing.Size(270, 82);
+            this.btnRapport.TabIndex = 9;
+            this.btnRapport.Text = "Rapports";
+            this.btnRapport.UseVisualStyleBackColor = false;
+            this.btnRapport.Click += new System.EventHandler(this.btnRapport_Click_1);
+            // 
+            // ShowPanel
+            // 
+            this.ShowPanel.Controls.Add(this.pictureBox1);
+            this.ShowPanel.Controls.Add(this.label2);
+            this.ShowPanel.Location = new System.Drawing.Point(279, 70);
+            this.ShowPanel.Name = "ShowPanel";
+            this.ShowPanel.Size = new System.Drawing.Size(1654, 994);
+            this.ShowPanel.TabIndex = 5;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Projet_Gestion_Ecole.Properties.Resources.images;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(178, 139);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("MV Boli", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(235, 105);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(715, 37);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Bienvenue dans votre page de  direction d etude\r\n";
+            // 
+            // FormDE
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1924, 1050);
+            this.Controls.Add(this.ShowPanel);
+            this.Controls.Add(this.SideBar);
+            this.Controls.Add(this.panel1);
+            this.Name = "FormDE";
             this.Text = "FormDE";
+            this.Load += new System.EventHandler(this.FormDE_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnHam)).EndInit();
+            this.SideBar.ResumeLayout(false);
+            this.ShowPanel.ResumeLayout(false);
+            this.ShowPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox btnHam;
+        private System.Windows.Forms.FlowLayoutPanel SideBar;
+        private System.Windows.Forms.Button btnEtudiants;
+        private System.Windows.Forms.Button btnClasses;
+        private System.Windows.Forms.Button btnProfesseur;
+        private System.Windows.Forms.Button btnMatieres;
+        private System.Windows.Forms.Button btnNotes;
+        private System.Windows.Forms.Button btnCours;
+        private System.Windows.Forms.Button btnRapport;
+        private System.Windows.Forms.Panel ShowPanel;
+        private System.Windows.Forms.Label label2;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

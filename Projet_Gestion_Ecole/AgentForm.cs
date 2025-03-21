@@ -16,5 +16,25 @@ namespace Projet_Gestion_Ecole
         {
             InitializeComponent();
         }
+
+        private void btnProfesseur_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEtudiants_Click(object sender, EventArgs e)
+        {
+            FormManager.showEtudiantForm(ShowPanel);
+        }
+
+        private void btnNotes_Click(object sender, EventArgs e)
+        {
+            FormManager.showNoteForm(ShowPanel);
+        }
+
+        private void btnRapport_Click(object sender, EventArgs e)
+        {
+            FormManager.showRapportForm(ShowPanel);
+        }
     }
 }
