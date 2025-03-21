@@ -84,15 +84,15 @@
             this.groupBox1.Controls.Add(this.txtMatricule);
             this.groupBox1.Controls.Add(this.txtNom);
             this.groupBox1.Controls.Add(this.txtPrenom);
-            this.groupBox1.Location = new System.Drawing.Point(25, 184);
+            this.groupBox1.Location = new System.Drawing.Point(3, 74);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(516, 497);
+            this.groupBox1.Size = new System.Drawing.Size(1250, 327);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(35, 447);
+            this.btnClear.Location = new System.Drawing.Point(882, 242);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(141, 36);
             this.btnClear.TabIndex = 20;
@@ -104,7 +104,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(292, 364);
+            this.label8.Location = new System.Drawing.Point(827, 25);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(79, 25);
             this.label8.TabIndex = 19;
@@ -114,7 +114,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(38, 367);
+            this.label7.Location = new System.Drawing.Point(520, 25);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(164, 25);
             this.label7.TabIndex = 18;
@@ -123,14 +123,14 @@
             // cmbClasse
             // 
             this.cmbClasse.FormattingEnabled = true;
-            this.cmbClasse.Location = new System.Drawing.Point(297, 392);
+            this.cmbClasse.Location = new System.Drawing.Point(832, 53);
             this.cmbClasse.Name = "cmbClasse";
             this.cmbClasse.Size = new System.Drawing.Size(180, 28);
             this.cmbClasse.TabIndex = 17;
             // 
             // dateNaiss
             // 
-            this.dateNaiss.Location = new System.Drawing.Point(35, 395);
+            this.dateNaiss.Location = new System.Drawing.Point(517, 53);
             this.dateNaiss.Name = "dateNaiss";
             this.dateNaiss.Size = new System.Drawing.Size(200, 26);
             this.dateNaiss.TabIndex = 16;
@@ -139,7 +139,7 @@
             // 
             this.ckfemme.AutoSize = true;
             this.ckfemme.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ckfemme.Location = new System.Drawing.Point(235, 316);
+            this.ckfemme.Location = new System.Drawing.Point(842, 148);
             this.ckfemme.Name = "ckfemme";
             this.ckfemme.Size = new System.Drawing.Size(102, 29);
             this.ckfemme.TabIndex = 15;
@@ -150,7 +150,7 @@
             // 
             this.ckhomme.AutoSize = true;
             this.ckhomme.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ckhomme.Location = new System.Drawing.Point(35, 316);
+            this.ckhomme.Location = new System.Drawing.Point(525, 148);
             this.ckhomme.Name = "ckhomme";
             this.ckhomme.Size = new System.Drawing.Size(108, 29);
             this.ckhomme.TabIndex = 13;
@@ -276,12 +276,12 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(547, 192);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 395);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(658, 489);
+            this.dataGridView1.Size = new System.Drawing.Size(1253, 339);
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dataGridView1_MouseDoubleClick);
             // 
@@ -318,7 +318,7 @@
             // cmbFilterClasse
             // 
             this.cmbFilterClasse.FormattingEnabled = true;
-            this.cmbFilterClasse.Location = new System.Drawing.Point(547, 139);
+            this.cmbFilterClasse.Location = new System.Drawing.Point(8, 40);
             this.cmbFilterClasse.Name = "cmbFilterClasse";
             this.cmbFilterClasse.Size = new System.Drawing.Size(229, 28);
             this.cmbFilterClasse.TabIndex = 7;
@@ -328,7 +328,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(542, 111);
+            this.label9.Location = new System.Drawing.Point(3, 12);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(165, 25);
             this.label9.TabIndex = 20;
@@ -337,7 +337,7 @@
             // btnSearch
             // 
             this.btnSearch.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnSearch.Location = new System.Drawing.Point(538, 34);
+            this.btnSearch.Location = new System.Drawing.Point(528, 12);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(143, 43);
             this.btnSearch.TabIndex = 21;
@@ -347,7 +347,7 @@
             // 
             // txtSearch
             // 
-            this.txtSearch.Location = new System.Drawing.Point(731, 34);
+            this.txtSearch.Location = new System.Drawing.Point(731, 12);
             this.txtSearch.Multiline = true;
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(367, 43);

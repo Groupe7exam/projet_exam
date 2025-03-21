@@ -1,4 +1,5 @@
 ﻿using DocumentFormat.OpenXml.Presentation;
+using Projet_Gestion_Ecole.DAO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -106,6 +107,16 @@ namespace Projet_Gestion_Ecole
         private void btnRapport_Click_1(object sender, EventArgs e)
         {
             FormManager.showRapportForm(ShowPanel);
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            // Réinitialiser la session utilisateur
+            SessionUtilisateur.Deconnecter();  // Assurez-vous que vous avez cette méthode pour nettoyer la session
+
+            // Rediriger vers le formulaire de connexion
+            FormManager.showLoginForm();  // Si vous avez une méthode qui gère l'affichage du formulaire de connexion
+            this.Close();
         }
     }
 }

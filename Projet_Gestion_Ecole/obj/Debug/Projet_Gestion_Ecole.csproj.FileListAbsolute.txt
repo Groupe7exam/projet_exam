@@ -385,3 +385,4 @@ C:\Users\User\Desktop\p3\projet_exam\Projet_Gestion_Ecole\bin\Debug\itext.styled
 C:\Users\User\Desktop\p3\projet_exam\Projet_Gestion_Ecole\bin\Debug\itext.svg.xml
 C:\Users\User\Desktop\p3\projet_exam\Projet_Gestion_Ecole\bin\Debug\itextsharp.xml
 C:\Users\User\Desktop\p3\projet_exam\Projet_Gestion_Ecole\obj\Debug\Projet_Gestion_Ecole.FormEtudiants.resources
+C:\Users\User\Desktop\p3\projet_exam\Projet_Gestion_Ecole\obj\Debug\Projet_Gestion_Ecole.ProfForm.resources

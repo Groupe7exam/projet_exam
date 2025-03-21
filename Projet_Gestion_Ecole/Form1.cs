@@ -114,22 +114,23 @@ namespace Projet_Gestion_Ecole
                 {
                     if (BCrypt.Net.BCrypt.Verify(password, user.MotDePasse))
                     {
-                        string verificationCode = GenerateVerificationCode();
-                        await SendSmsAsync(user.Telephone, verificationCode);
-                        string inputCode = PromptForCode();
+                        //string verificationCode = GenerateVerificationCode();
+                        //await SendSmsAsync(user.Telephone, verificationCode);
+                        //string inputCode = PromptForCode();
 
-                        if (inputCode == verificationCode)
-                        {
+                        //if (inputCode == verificationCode)
+                        //{
                             // ✅ Stocker l'utilisateur dans la session
                             SessionUtilisateur.SetSession(user);
 
                             // 🔄 Rediriger selon le rôle
                             NavigateToUserRole(user.Role);
-                        }
-                        else
-                        {
-                            MessageBox.Show("Code de vérification incorrect", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        }
+                            
+                        //}
+                        //else
+                        //{
+                        //    MessageBox.Show("Code de vérification incorrect", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        //}
                     }
                     else
                     {

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Projet_Gestion_Ecole.DAO;
 
 namespace Projet_Gestion_Ecole
 {
@@ -35,6 +36,17 @@ namespace Projet_Gestion_Ecole
         private void btnRapport_Click(object sender, EventArgs e)
         {
             FormManager.showRapportForm(ShowPanel);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // Réinitialiser la session utilisateur
+            SessionUtilisateur.Deconnecter();  // Assurez-vous que vous avez cette méthode pour nettoyer la session
+
+            // Rediriger vers le formulaire de connexion
+            FormManager.showLoginForm();  // Si vous avez une méthode qui gère l'affichage du formulaire de connexion
+            this.Close();
+
         }
     }
 }

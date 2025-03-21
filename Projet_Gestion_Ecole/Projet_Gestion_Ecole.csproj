@@ -440,6 +440,9 @@
     <EmbeddedResource Include="Migrations\202503210439102_Moussa.resx">
       <DependentUpon>202503210439102_Moussa.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ProfForm.resx">
+      <DependentUpon>ProfForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

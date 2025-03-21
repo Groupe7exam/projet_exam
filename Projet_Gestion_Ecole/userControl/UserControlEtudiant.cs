@@ -23,6 +23,23 @@ namespace Projet_Gestion_Ecole.userControl
             refreshTab();
             refreshCmb();
             cmbFilterClasse.SelectedIndexChanged += cmbFilterClasse_SelectedIndexChanged;
+           
+
+            // Désactiver les boutons si l'utilisateur est un professeur
+            if (SessionUtilisateur.Role == "Professeur")
+            {
+                btnAdd.Enabled = false;  // Désactiver le bouton "Ajouter"
+                btnUpdate.Enabled = false;  // Désactiver le bouton "Mettre à jour"
+                delete.Enabled = false;  // Désactiver le bouton "Supprimer"
+                btnAdd.Visible = false;  // Masquer le bouton "Ajouter"
+                btnUpdate.Visible = false;  // Masquer le bouton "Mettre à jour"
+                delete.Visible = false;  // Masquer le bouton "Supprimer"
+                groupBox1.Enabled = false;  // Désactiver le groupBox
+                groupBox1.Visible = false;  // Masquer le groupBox
+            }
+
+
+            
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -356,6 +373,7 @@ private void cmbClasse_SelectedIndexChanged(object sender, EventArgs e)
                 }
             }
         }
+
 
 
 

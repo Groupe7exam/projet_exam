@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using Projet_Gestion_Ecole.DAO;
+using DocumentFormat.OpenXml.Drawing.Charts;
 
 namespace Projet_Gestion_Ecole.userControl
 {
@@ -23,6 +24,17 @@ namespace Projet_Gestion_Ecole.userControl
         {
             clear();
             refresh();
+            if (SessionUtilisateur.Role == "Professeur")
+            {
+                btnAdd.Enabled = false;  // Désactiver le bouton "Ajouter"
+                btnUpdate.Enabled = false;  // Désactiver le bouton "Mettre à jour"
+                btnDelete.Enabled = false;  // Désactiver le bouton "Supprimer"
+                btnAdd.Visible = false;  // Masquer le bouton "Ajouter"
+                btnUpdate.Visible = false;  // Masquer le bouton "Mettre à jour"
+                btnDelete.Visible = false;  // Masquer le bouton "Supprimer"
+                groupBox1.Enabled = false;  // Désactiver le groupBox
+                groupBox1.Visible = false;  // Masquer le groupBox
+            }
 
         }
 
