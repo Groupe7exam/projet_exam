@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Projet_Gestion_Ecole.DAO
 {
-    class OTCode
+    public class OTCode
     {
         public int Id { get; set; }
         public int IdUtilisateur { get; set; }

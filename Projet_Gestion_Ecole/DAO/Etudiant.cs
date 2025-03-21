@@ -20,5 +20,6 @@ namespace Projet_Gestion_Ecole.DAO
         public int IdClasse { get; set; }
 
         public Classe Classe { get; set; }
+        public ICollection<Note> Notes { get; set; }
     }
 }

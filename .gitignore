@@ -1,0 +1,7 @@
+# Fichiers et dossiers Visual Studio
+.vs/
+*.vsdx
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
