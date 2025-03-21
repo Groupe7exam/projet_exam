@@ -39,6 +39,9 @@
     <Reference Include="BCrypt.Net-Next, Version=4.0.3.0, Culture=neutral, PublicKeyToken=1e11be04b6288443, processorArchitecture=MSIL">
       <HintPath>..\packages\BCrypt.Net-Next.4.0.3\lib\net48\BCrypt.Net-Next.dll</HintPath>
     </Reference>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.Cryptography.2.4.0\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
     <Reference Include="ColorTranslations, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Handy.DotNETCore-Compatibility.ColorTranslations.0.2.1\lib\net20\ColorTranslations.dll</HintPath>
     </Reference>
@@ -56,6 +59,45 @@
     </Reference>
     <Reference Include="Enums.NET, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7ea1c1650d506225, processorArchitecture=MSIL">
       <HintPath>..\packages\Enums.NET.5.0.0\lib\net461\Enums.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.barcodes, Version=9.1.0.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext.9.1.0\lib\net461\itext.barcodes.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.bouncy-castle-connector, Version=9.1.0.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext.9.1.0\lib\net461\itext.bouncy-castle-connector.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.commons, Version=9.1.0.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext.commons.9.1.0\lib\net461\itext.commons.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.forms, Version=9.1.0.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext.9.1.0\lib\net461\itext.forms.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.io, Version=9.1.0.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext.9.1.0\lib\net461\itext.io.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.kernel, Version=9.1.0.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext.9.1.0\lib\net461\itext.kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.layout, Version=9.1.0.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext.9.1.0\lib\net461\itext.layout.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.pdfa, Version=9.1.0.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext.9.1.0\lib\net461\itext.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.pdfua, Version=9.1.0.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext.9.1.0\lib\net461\itext.pdfua.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.sign, Version=9.1.0.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext.9.1.0\lib\net461\itext.sign.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.styledxmlparser, Version=9.1.0.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext.9.1.0\lib\net461\itext.styledxmlparser.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.svg, Version=9.1.0.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext.9.1.0\lib\net461\itext.svg.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.4, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.4\lib\net461\itextsharp.dll</HintPath>
     </Reference>
     <Reference Include="jose-jwt, Version=5.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\jose-jwt.5.1.0\lib\net472\jose-jwt.dll</HintPath>
@@ -271,6 +313,12 @@
     <Compile Include="FormDE.Designer.cs">
       <DependentUpon>FormDE.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormEtudiants.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEtudiants.Designer.cs">
+      <DependentUpon>FormEtudiants.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormManager.cs" />
     <Compile Include="InscriptionForm.cs">
       <SubType>Form</SubType>
@@ -302,11 +350,71 @@
     <Compile Include="UserControlAdminPage.Designer.cs">
       <DependentUpon>UserControlAdminPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="userControl\UserControlAdminPage.cs">
+    <Compile Include="usercontrol\test.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="userControl\UserControlAdminPage.Designer.cs">
+    <Compile Include="usercontrol\test.Designer.cs">
+      <DependentUpon>test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrol\UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontrol\UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrol\UserControl1Matiere.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontrol\UserControl1Matiere.Designer.cs">
+      <DependentUpon>UserControl1Matiere.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrol\UserControlAdminPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontrol\UserControlAdminPage.Designer.cs">
       <DependentUpon>UserControlAdminPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrol\UserControlClassePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontrol\UserControlClassePage.Designer.cs">
+      <DependentUpon>UserControlClassePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrol\UserControlCours.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontrol\UserControlCours.Designer.cs">
+      <DependentUpon>UserControlCours.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrol\UserControlEtudiant.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontrol\UserControlEtudiant.Designer.cs">
+      <DependentUpon>UserControlEtudiant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrol\UserControlNotes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontrol\UserControlNotes.Designer.cs">
+      <DependentUpon>UserControlNotes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrol\UserControlProfesseur.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontrol\UserControlProfesseur.Designer.cs">
+      <DependentUpon>UserControlProfesseur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrol\UserControltest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontrol\UserControltest.Designer.cs">
+      <DependentUpon>UserControltest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrol\UserRapports.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontrol\UserRapports.Designer.cs">
+      <DependentUpon>UserRapports.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AdminForm.resx">
       <DependentUpon>AdminForm.cs</DependentUpon>
@@ -319,6 +427,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormDE.resx">
       <DependentUpon>FormDE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEtudiants.resx">
+      <DependentUpon>FormEtudiants.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InscriptionForm.resx">
       <DependentUpon>InscriptionForm.cs</DependentUpon>
@@ -342,8 +453,38 @@
     <EmbeddedResource Include="UserControlAdminPage.resx">
       <DependentUpon>UserControlAdminPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="userControl\UserControlAdminPage.resx">
+    <EmbeddedResource Include="usercontrol\test.resx">
+      <DependentUpon>test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontrol\UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontrol\UserControl1Matiere.resx">
+      <DependentUpon>UserControl1Matiere.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontrol\UserControlAdminPage.resx">
       <DependentUpon>UserControlAdminPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontrol\UserControlClassePage.resx">
+      <DependentUpon>UserControlClassePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontrol\UserControlCours.resx">
+      <DependentUpon>UserControlCours.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontrol\UserControlEtudiant.resx">
+      <DependentUpon>UserControlEtudiant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontrol\UserControlNotes.resx">
+      <DependentUpon>UserControlNotes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontrol\UserControlProfesseur.resx">
+      <DependentUpon>UserControlProfesseur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontrol\UserControltest.resx">
+      <DependentUpon>UserControltest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontrol\UserRapports.resx">
+      <DependentUpon>UserRapports.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
