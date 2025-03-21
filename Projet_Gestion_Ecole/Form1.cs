@@ -11,6 +11,7 @@ using Vonage;
 using Vonage.Request;
 using Vonage.Messaging;
 using Vonage.Messages.Sms;
+using Projet_Gestion_Ecole.DAO;
 
 
 
@@ -18,6 +19,8 @@ namespace Projet_Gestion_Ecole
 {
     public partial class Form1: Form
     {
+        public static Utilisateur UtilisateurConnecte { get; private set; }
+
         public Form1()
         {
             InitializeComponent();
@@ -97,7 +100,6 @@ namespace Projet_Gestion_Ecole
             string nomUser = txtUser.Text;
             string password = txtPassword.Text;
 
-            // Vérification que les champs ne sont pas vides
             if (string.IsNullOrEmpty(nomUser) || string.IsNullOrEmpty(password))
             {
                 MessageBox.Show("Veuillez remplir tous les champs", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -107,22 +109,21 @@ namespace Projet_Gestion_Ecole
             using (var db = new DBconnect())
             {
                 var user = db.Utilisateurs.FirstOrDefault(u => u.NomUtilisateur == nomUser);
+
                 if (user != null)
                 {
                     if (BCrypt.Net.BCrypt.Verify(password, user.MotDePasse))
                     {
-                        // Générer un code de vérification
                         string verificationCode = GenerateVerificationCode();
-
-                        // Envoyer le code par SMS
                         await SendSmsAsync(user.Telephone, verificationCode);
-
-                        // Demander à l'utilisateur de saisir le code de vérification
                         string inputCode = PromptForCode();
 
                         if (inputCode == verificationCode)
                         {
-                            // Connexion réussie
+                            // ✅ Stocker l'utilisateur dans la session
+                            SessionUtilisateur.SetSession(user);
+
+                            // 🔄 Rediriger selon le rôle
                             NavigateToUserRole(user.Role);
                         }
                         else
@@ -141,6 +142,7 @@ namespace Projet_Gestion_Ecole
                 }
             }
         }
+
 
         private string PromptForCode()
         {
@@ -166,7 +168,7 @@ namespace Projet_Gestion_Ecole
 
         private async Task SendSmsAsync(string to, string code)
         {
-            var credentials = Credentials.FromApiKeyAndSecret("8209fdeb", "P3HsylzqxPE1TjPh");
+            var credentials = Credentials.FromApiKeyAndSecret("133a8f01", "rUibb6KoE6HhSypn");
             var client = new VonageClient(credentials);
 
             var smsRequest = new SendSmsRequest
