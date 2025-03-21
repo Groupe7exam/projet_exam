@@ -30,8 +30,47 @@ namespace Projet_Gestion_Ecole.userControl
             {
                 dataGridView1.DataSource = db.Utilisateurs.ToList();
             }
+            CustomiserDataGridView();
         }
+        private void CustomiserDataGridView()
+        {
+            dataGridView1.EnableHeadersVisualStyles = false;
 
+            // 🔹 Style de l'en-tête
+            dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(23, 24, 29); // Couleur personnalisée (RGB(23, 24, 29))
+            dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font("Arial", 10, FontStyle.Bold);
+
+            // 🔹 Style des lignes (effet zébré)
+            dataGridView1.AlternatingRowsDefaultCellStyle.BackColor = Color.LightGray;
+            dataGridView1.DefaultCellStyle.BackColor = Color.White;
+
+            // 🔹 Bordures et style de grille
+            dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dataGridView1.GridColor = Color.Gray;
+
+            // 🔹 Alignement du texte
+            dataGridView1.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+            // 🔹 Taille automatique des colonnes
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+            // 🔹 Espacement des cellules
+            dataGridView1.DefaultCellStyle.Padding = new Padding(5);
+
+            // 🔹 Changement de couleur au survol
+            dataGridView1.DefaultCellStyle.SelectionBackColor = Color.FromArgb(23, 24, 29); // Couleur personnalisée (RGB(23, 24, 29))
+            dataGridView1.DefaultCellStyle.SelectionForeColor = Color.White;
+
+            // 🔹 Désactiver la sélection multiple
+            dataGridView1.MultiSelect = false;
+
+            // 🔹 Désactiver l'ajout de nouvelles lignes
+            dataGridView1.AllowUserToAddRows = false;
+
+            // 🔹 Ajuster la hauteur des lignes
+            dataGridView1.RowTemplate.Height = 30;
+        }
         public void clear()
         {
             textNom.Text = string.Empty;
@@ -133,9 +172,9 @@ namespace Projet_Gestion_Ecole.userControl
                 string nom = textNom.Text;
                 string telephone = txtTel.Text.Trim();
                 string motDePasse = txtPassword.Text.Trim();
+                string Role = cmbRole.Text;
 
-               
-                    if (string.IsNullOrEmpty(nom) || string.IsNullOrEmpty(telephone) || string.IsNullOrEmpty(motDePasse) )
+                if (string.IsNullOrEmpty(nom) || string.IsNullOrEmpty(telephone) || string.IsNullOrEmpty(motDePasse) )
                     {
                         MessageBox.Show("veuillez remplir tous les champs", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -147,10 +186,10 @@ namespace Projet_Gestion_Ecole.userControl
                         p1.NomUtilisateur = nom;
                         p1.Telephone = telephone;
                         p1.MotDePasse = motDePasseHache;
-           
+                        p1.Role = Role;
 
 
-                        db.SaveChanges();
+                    db.SaveChanges();
                         MessageBox.Show("Personne Modifier avec succes", "succés", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         refresh();
                         clear();

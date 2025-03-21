@@ -30,14 +30,16 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtTel = new System.Windows.Forms.TextBox();
-            this.textNom = new System.Windows.Forms.TextBox();
-            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.cmbRole = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.btnClear = new System.Windows.Forms.Button();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.textNom = new System.Windows.Forms.TextBox();
+            this.txtTel = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -45,8 +47,6 @@
             this.btnSearch = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.label5 = new System.Windows.Forms.Label();
-            this.cmbRole = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -70,33 +70,65 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
-            // label1
+            // cmbRole
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(109, 35);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 20);
-            this.label1.TabIndex = 0;
+            this.cmbRole.FormattingEnabled = true;
+            this.cmbRole.Items.AddRange(new object[] {
+            "ADMIN",
+            "DE",
+            "Agent",
+            "Professeur"});
+            this.cmbRole.Location = new System.Drawing.Point(36, 349);
+            this.cmbRole.Name = "cmbRole";
+            this.cmbRole.Size = new System.Drawing.Size(207, 28);
+            this.cmbRole.TabIndex = 8;
             // 
-            // label3
+            // label5
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(31, 35);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(122, 26);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Telephone\r\n";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(31, 328);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(61, 26);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Role";
             // 
-            // label2
+            // btnClear
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(31, 133);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(173, 26);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "nom Utilisateur";
+            this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(152)))), ((int)(((byte)(255)))));
+            this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnClear.ForeColor = System.Drawing.Color.White;
+            this.btnClear.Location = new System.Drawing.Point(36, 402);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(117, 38);
+            this.btnClear.TabIndex = 6;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.Location = new System.Drawing.Point(36, 264);
+            this.txtPassword.Multiline = true;
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(207, 44);
+            this.txtPassword.TabIndex = 5;
+            // 
+            // textNom
+            // 
+            this.textNom.Location = new System.Drawing.Point(36, 162);
+            this.textNom.Multiline = true;
+            this.textNom.Name = "textNom";
+            this.textNom.Size = new System.Drawing.Size(207, 44);
+            this.textNom.TabIndex = 4;
+            // 
+            // txtTel
+            // 
+            this.txtTel.Location = new System.Drawing.Point(36, 74);
+            this.txtTel.Multiline = true;
+            this.txtTel.Name = "txtTel";
+            this.txtTel.Size = new System.Drawing.Size(207, 44);
+            this.txtTel.TabIndex = 1;
             // 
             // label4
             // 
@@ -108,68 +140,71 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Password";
             // 
-            // txtTel
+            // label2
             // 
-            this.txtTel.Location = new System.Drawing.Point(36, 74);
-            this.txtTel.Multiline = true;
-            this.txtTel.Name = "txtTel";
-            this.txtTel.Size = new System.Drawing.Size(207, 44);
-            this.txtTel.TabIndex = 1;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(31, 133);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(173, 26);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "nom Utilisateur";
             // 
-            // textNom
+            // label3
             // 
-            this.textNom.Location = new System.Drawing.Point(36, 162);
-            this.textNom.Multiline = true;
-            this.textNom.Name = "textNom";
-            this.textNom.Size = new System.Drawing.Size(207, 44);
-            this.textNom.TabIndex = 4;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(31, 35);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(122, 26);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Telephone\r\n";
             // 
-            // txtPassword
+            // label1
             // 
-            this.txtPassword.Location = new System.Drawing.Point(36, 264);
-            this.txtPassword.Multiline = true;
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(207, 44);
-            this.txtPassword.TabIndex = 5;
-            // 
-            // btnClear
-            // 
-            this.btnClear.Location = new System.Drawing.Point(36, 402);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(117, 38);
-            this.btnClear.TabIndex = 6;
-            this.btnClear.Text = "Clear";
-            this.btnClear.UseVisualStyleBackColor = true;
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(109, 35);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 20);
+            this.label1.TabIndex = 0;
             // 
             // btnAdd
             // 
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(152)))), ((int)(((byte)(255)))));
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
             this.btnAdd.Location = new System.Drawing.Point(370, 589);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(169, 43);
             this.btnAdd.TabIndex = 1;
             this.btnAdd.Text = "Ajouter";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnUpdate
             // 
+            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(152)))), ((int)(((byte)(255)))));
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnUpdate.ForeColor = System.Drawing.Color.White;
             this.btnUpdate.Location = new System.Drawing.Point(599, 589);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(183, 43);
             this.btnUpdate.TabIndex = 2;
             this.btnUpdate.Text = "Modifier";
-            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.UseVisualStyleBackColor = false;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
+            this.btnDelete.BackColor = System.Drawing.Color.Firebrick;
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnDelete.ForeColor = System.Drawing.Color.White;
             this.btnDelete.Location = new System.Drawing.Point(833, 589);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(183, 43);
             this.btnDelete.TabIndex = 3;
             this.btnDelete.Text = "Supprimmer";
-            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // dataGridView1
@@ -185,12 +220,15 @@
             // 
             // btnSearch
             // 
+            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(152)))), ((int)(((byte)(255)))));
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSearch.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnSearch.Location = new System.Drawing.Point(439, 71);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(140, 37);
             this.btnSearch.TabIndex = 5;
             this.btnSearch.Text = "Search";
-            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.UseVisualStyleBackColor = false;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // txtSearch
@@ -206,29 +244,6 @@
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(31, 328);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(61, 26);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Role";
-            // 
-            // cmbRole
-            // 
-            this.cmbRole.FormattingEnabled = true;
-            this.cmbRole.Items.AddRange(new object[] {
-            "ADMIN",
-            "DE",
-            "Agent",
-            "Professeur"});
-            this.cmbRole.Location = new System.Drawing.Point(36, 349);
-            this.cmbRole.Name = "cmbRole";
-            this.cmbRole.Size = new System.Drawing.Size(207, 28);
-            this.cmbRole.TabIndex = 8;
             // 
             // UserControlAdminPage
             // 
