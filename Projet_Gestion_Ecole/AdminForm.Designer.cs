@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminForm));
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnHam = new System.Windows.Forms.PictureBox();
@@ -39,6 +40,8 @@
             this.btnProfesseur = new System.Windows.Forms.Button();
             this.btnMatieres = new System.Windows.Forms.Button();
             this.btnNotes = new System.Windows.Forms.Button();
+            this.btnCours = new System.Windows.Forms.Button();
+            this.btnRapport = new System.Windows.Forms.Button();
             this.Transition = new System.Windows.Forms.Timer(this.components);
             this.ShowPanel = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
@@ -50,6 +53,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(72, 22);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(119, 25);
@@ -58,14 +62,15 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btnHam);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1194, 64);
+            this.panel1.Size = new System.Drawing.Size(1524, 64);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btnHam
             // 
@@ -87,10 +92,12 @@
             this.SideBar.Controls.Add(this.btnProfesseur);
             this.SideBar.Controls.Add(this.btnMatieres);
             this.SideBar.Controls.Add(this.btnNotes);
+            this.SideBar.Controls.Add(this.btnCours);
+            this.SideBar.Controls.Add(this.btnRapport);
             this.SideBar.Dock = System.Windows.Forms.DockStyle.Left;
             this.SideBar.Location = new System.Drawing.Point(0, 64);
             this.SideBar.Name = "SideBar";
-            this.SideBar.Size = new System.Drawing.Size(273, 664);
+            this.SideBar.Size = new System.Drawing.Size(273, 886);
             this.SideBar.TabIndex = 1;
             // 
             // btnUser
@@ -192,8 +199,42 @@
             this.btnNotes.Size = new System.Drawing.Size(270, 82);
             this.btnNotes.TabIndex = 7;
             this.btnNotes.Text = "Notes";
-            this.btnNotes.UseVisualStyleBackColor = false;
+            this.btnNotes.UseVisualStyleBackColor = true;
             this.btnNotes.Click += new System.EventHandler(this.btnNotes_Click);
+            // 
+            // btnCours
+            // 
+            this.btnCours.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.btnCours.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.btnCours.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.btnCours.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.btnCours.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCours.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCours.ForeColor = System.Drawing.Color.GhostWhite;
+            this.btnCours.Location = new System.Drawing.Point(3, 531);
+            this.btnCours.Name = "btnCours";
+            this.btnCours.Size = new System.Drawing.Size(270, 82);
+            this.btnCours.TabIndex = 8;
+            this.btnCours.Text = "Cours";
+            this.btnCours.UseVisualStyleBackColor = false;
+            this.btnCours.Click += new System.EventHandler(this.btnCours_Click);
+            // 
+            // btnRapport
+            // 
+            this.btnRapport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.btnRapport.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.btnRapport.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.btnRapport.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.btnRapport.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnRapport.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRapport.ForeColor = System.Drawing.Color.GhostWhite;
+            this.btnRapport.Location = new System.Drawing.Point(3, 619);
+            this.btnRapport.Name = "btnRapport";
+            this.btnRapport.Size = new System.Drawing.Size(270, 82);
+            this.btnRapport.TabIndex = 9;
+            this.btnRapport.Text = "Rapports";
+            this.btnRapport.UseVisualStyleBackColor = false;
+            this.btnRapport.Click += new System.EventHandler(this.btnRapport_Click);
             // 
             // Transition
             // 
@@ -204,18 +245,20 @@
             // 
             this.ShowPanel.Location = new System.Drawing.Point(268, 64);
             this.ShowPanel.Name = "ShowPanel";
-            this.ShowPanel.Size = new System.Drawing.Size(934, 664);
+            this.ShowPanel.Size = new System.Drawing.Size(1034, 864);
             this.ShowPanel.TabIndex = 2;
             // 
             // AdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1194, 728);
+            this.ClientSize = new System.Drawing.Size(1524, 950);
             this.Controls.Add(this.ShowPanel);
             this.Controls.Add(this.SideBar);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AdminForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminForm";
             this.Load += new System.EventHandler(this.AdminForm_Load);
             this.panel1.ResumeLayout(false);
@@ -240,5 +283,7 @@
         private System.Windows.Forms.Timer Transition;
         private System.Windows.Forms.Button btnEtudiants;
         private System.Windows.Forms.Panel ShowPanel;
+        private System.Windows.Forms.Button btnCours;
+        private System.Windows.Forms.Button btnRapport;
     }
 }

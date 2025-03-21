@@ -58,27 +58,42 @@ namespace Projet_Gestion_Ecole
 
         private void btnEtudiants_Click(object sender, EventArgs e)
         {
-            // Logique pour afficher les étudiants
+            FormManager.showEtudiantForm(ShowPanel);
         }
 
         private void btnClasses_Click(object sender, EventArgs e)
         {
-            // Logique pour afficher les classes
+            FormManager.showClasseForm(ShowPanel);
         }
 
         private void btnProfesseur_Click(object sender, EventArgs e)
         {
-            // Logique pour afficher les professeurs
+            FormManager.showProfesseurForm(ShowPanel);
         }
 
         private void btnMatieres_Click(object sender, EventArgs e)
         {
-            // Logique pour afficher les matières
+            FormManager.showMatiereForm(ShowPanel);
         }
 
         private void btnNotes_Click(object sender, EventArgs e)
         {
-            // Logique pour afficher les notes
+            FormManager.showNoteForm(ShowPanel);
+        }
+
+        private void btnCours_Click(object sender, EventArgs e)
+        {
+            FormManager.showCoursForm(ShowPanel);
+        }
+
+        private void btnRapport_Click(object sender, EventArgs e)
+        {
+            FormManager.showRapportForm(ShowPanel);
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
